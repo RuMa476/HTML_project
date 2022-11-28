@@ -1,0 +1,107 @@
+@media only screen and (max-width: 1024px){
+    .container {
+        width: 98%;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+     .offers-items{ 
+        /* flex-wrap: wrap;лучше данный стиль прописать в styles.css */
+        justify-content:space-evenly;
+    } 
+    .offers-item {
+        width: 48%;
+        margin-bottom: 40px;
+    }
+
+    .soc-fixed{
+        display: none;
+    }
+
+    .services-items{ 
+        justify-content:space-evenly;
+    } 
+    .services-item {
+        width: 46%;
+        
+    }
+
+    /* Для этого блока используем вариант отмены флекса вместо увеличения ширины внутренних блоков и использования wrap */
+    .contacts-items{
+        display: block; /* отменяю flex */
+    }
+
+    .contacts-order, .contacts-contact{
+        width: 94%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .contacts-order{
+        padding: 10px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 425px){
+    .offers-item {
+        width: 94%;
+        margin: 0 auto;
+    }
+    h2::before, h2::after{
+        display: none;
+    }
+
+
+    .services-item {
+        width: 96%;
+        
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .services-item-header{
+        display: block; /* мы так сделали, чтобы отменить flex */
+    }
+    .services-headerpict{
+        margin: 0 auto;
+    }
+    .services-headertext{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .services-headertext h3{
+        text-align: center;
+        font-size: 18px;
+    }
+    .services-item p{
+        text-align: center;
+    }
+    .services-item-text {
+        padding-top: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 320px){
+    h2{
+        font-size: 24px;
+        padding-top: 30px;
+    }
+
+    .services-headerpict{
+        display: none;
+    }
+    .contacts-adress-item p{
+        display: inline-block;
+    }
+    .contacts-adress-item p span{
+        display: block;
+        padding-left: 60px;
+         padding-top: -20px; 
+        width: 200px;
+    }
+
+}
